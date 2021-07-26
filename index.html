@@ -1,0 +1,71 @@
+<h1>Martial Arts Simulator</h1>
+
+<canvas id="myCanvas" width="1800" height="800"></canvas>
+
+<style>
+  h1 {
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+body {
+    background-image: url(./images/background.jpg?raw);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+
+.center {
+    text-align: center;
+    margin-left: 0%;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+</style>
+
+
+
+<script type="text/javascript" src="script.js"></script>
+
+
+<div class="center">
+    <button id="forward">Forward: <i class="arrow right"></i></button>
+    <button id="backward">Backward: <i class="arrow left"></i></button>
+    <button id="punch">Punch: <i class="arrow up"></i></button>
+    <button id="kick">Kick: <i class="arrow down"></i></button>
+    <button id="block">Block(Space Key)</button>
+</div>
+
+<br>
+<footer style = "text-align: center;">
+  Created by G Sreelakshmi a.k.a. Megha
+</footer>
+
